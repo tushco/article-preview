@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="main-img" src="images/drawers.jpg" alt="">
+    <div class="right-container">
+      <h2>Shift the overall look and feel by adding these wonderful
+      touches to furniture in your home</h2>
+      <p>Ever been in a room and felt like something was missing? Perhaps
+      it felt slightly bare and uninviting. I’ve got some simple tips
+      to help you make any room feel complete.</p>
+      <div class="bottom-container">
+
+        <div id="person" class="person">
+          <img class="avatar" src="images/avatar-michelle.jpg" alt="">
+          <div class="info">
+            <h6 class="name-heading">Michelle Appleton</h6>
+            <h6 class="date-heading">28 Jun 2020</h6>
+          </div>
+          <button class="share-button mobile"  onclick="showShare()" type="button" name="button">
+            <img class="share-icon"src="images/icon-share.svg" alt="">
+        </div>
+        <div class="share">
+          <div class="tooltip"><button class="share-button" type="button" name="button">
+            <img class="share-icon"src="images/icon-share.svg" alt="">
+          </button>
+            <span class="tooltiptext">
+              <div class="container">
+                <h6 class="share-tooltip">SHARE</h6>
+                  <img class="share-tooltip" src="images/icon-facebook.svg" alt="">
+
+                  <img class="share-tooltip" src="images/icon-twitter.svg" alt="">
+
+                  <img class="share-tooltip" src="images/icon-pinterest.svg" alt="">
+
+              </div>
+            </span>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div id="mobile" class="container-mobile">
+        <h5 class="share-heading">SHARE</h5>
+        <img class="icon-mobile" src="images/icon-facebook.svg" alt="">
+
+        <img class="icon-mobile" src="images/icon-twitter.svg" alt="">
+
+        <img class="icon-mobile" src="images/icon-pinterest.svg" alt="">
+
+        <button class="share-button mobile-share" type="button" name="button">
+          <img class="share-icon"src="images/icon-share.svg" alt="">
+        </button>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Natalia Tuszko</a>.
+  </div>
+  <script type="text/javascript">
+    function showShare(){
+      document.getElementById("mobile").style.display = "flex";
+      document.getElementById("mobile").style.justifyContent = "space-evenly";
+      document.getElementById("person").style.display = "none";
+    }
+  </script>
+</body>
+</html>
